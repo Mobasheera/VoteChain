@@ -12,10 +12,16 @@ async function main() {
   await (await contract.addCandidate("Mobashshir Ahsan", "Clearer communication and class updates")).wait();
   await (await contract.addCandidate("Raj Bhosle ", "More peer learning and study groups")).wait();
 
-  const signers = await ethers.getSigners();
-  for (const signer of signers.slice(1, 7)) {
-    await (await contract.setVoterEligibility(await signer.getAddress(), true)).wait();
-  }
+
+const signers = await ethers.getSigners();
+for (const signer of signers.slice(1, 7)) {
+  await (await contract.setVoterEligibility(await signer.getAddress(), true)).wait();
+}
+
+// Start the election after configuring candidates and voters
+await (await contract.startVoting()).wait();
+console.log("Voting has started!");
+
 
   const artifact = await artifacts.readArtifact("VoteChain");
   const output = {
