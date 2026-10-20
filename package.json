@@ -1,0 +1,33 @@
+{
+  "name": "votechain",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local blockchain-based voting mini project for educational use",
+  "scripts": {
+    "chain": "hardhat node",
+    "deploy": "hardhat run scripts/deploy.js --network localhost",
+    "server": "node server.js",
+    "client": "vite --host 127.0.0.1",
+    "dev": "concurrently -k -n CHAIN,DEPLOY,SERVER,CLIENT -c blue,green,magenta,cyan \"npm run chain\" \"wait-on tcp:127.0.0.1:8545 && npm run deploy\" \"wait-on file:build/contracts.json && npm run server\" \"wait-on http://127.0.0.1:3001/api/health && npm run client\"",
+    "test": "hardhat test",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ethers": "^6.13.4",
+    "express": "^4.21.2",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.0",
+    "hardhat": "^2.22.17",
+    "vite": "^6.0.7",
+    "wait-on": "^8.0.1",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "chai": "^4.5.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.8"
+  }
+}
