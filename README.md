@@ -31,16 +31,16 @@ The application brings the process together in a single dashboard: review candid
 
 ## ✨ Features
 
-- **Election overview** — view the election status, candidates, vote totals, demo voters, and latest block.
-- **Candidate management** — add candidates during the setup phase.
-- **Guided ballot** — select a demo voter, choose a candidate, review the selection, and confirm the vote.
-- **Smart-contract-enforced rules** — only eligible accounts can vote, each eligible account can vote once, and votes are accepted only while voting is open.
-- **Live results** — view candidate vote counts and percentage breakdowns.
-- **Transaction history** — inspect voter addresses, transaction hashes, block numbers, and timestamps.
-- **Local network status** — view the local chain ID, latest block, and deployed contract details.
-- **Election lifecycle controls** — start and finalize voting through local administrator endpoints.
-- **Automated contract tests** — verify core election rules and expected rejections.
-- **No external wallet required** — no MetaMask, public testnet, real cryptocurrency, or account registration is needed.
+- **Election overview** - view the election status, candidates, vote totals, demo voters, and latest block.
+- **Candidate management** - add candidates during the setup phase.
+- **Guided ballot** - select a demo voter, choose a candidate, review the selection, and confirm the vote.
+- **Smart-contract-enforced rules** - only eligible accounts can vote, each eligible account can vote once, and votes are accepted only while voting is open.
+- **Live results** - view candidate vote counts and percentage breakdowns.
+- **Transaction history** - inspect voter addresses, transaction hashes, block numbers, and timestamps.
+- **Local network status** - view the local chain ID, latest block, and deployed contract details.
+- **Election lifecycle controls** - start and finalize voting through local administrator endpoints.
+- **Automated contract tests** - verify core election rules and expected rejections.
+- **No external wallet required** - no MetaMask, public testnet, real cryptocurrency, or account registration is needed.
 
 ## 🧰 Technology Stack
 
@@ -130,11 +130,11 @@ Keep the terminal running while using the application. To stop the environment, 
 
 Use the sidebar to move between:
 
-- **Overview** — election status and summary statistics.
-- **Cast a vote** — select a demo voter, choose a candidate, review, and confirm.
-- **Candidates** — review candidates and add candidates during setup.
-- **Results** — inspect the current vote count and percentages.
-- **Transactions** — review confirmed vote transactions and search the history.
+- **Overview** - election status and summary statistics.
+- **Cast a vote** - select a demo voter, choose a candidate, review, and confirm.
+- **Candidates** - review candidates and add candidates during setup.
+- **Results** - inspect the current vote count and percentages.
+- **Transactions** - review confirmed vote transactions and search the history.
 
 ### Cast a demo vote
 
