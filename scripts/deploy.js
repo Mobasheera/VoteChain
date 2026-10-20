@@ -8,9 +8,9 @@ async function main() {
   const contract = await VoteChain.deploy("Computer Engineering Class Election");
   await contract.waitForDeployment();
 
-  await (await contract.addCandidate("Aarav Mehta", "Focused on better lab coordination")).wait();
-  await (await contract.addCandidate("Diya Shah", "More peer learning and study groups")).wait();
-  await (await contract.addCandidate("Kabir Patel", "Clearer communication and class updates")).wait();
+  await (await contract.addCandidate("Pradnyeel Patil", "Focused on better lab coordination")).wait();
+  await (await contract.addCandidate("Mobashshir Ahsan", "Clearer communication and class updates")).wait();
+  await (await contract.addCandidate("Raj Bhosle ", "More peer learning and study groups")).wait();
 
   const signers = await ethers.getSigners();
   for (const signer of signers.slice(1, 7)) {
