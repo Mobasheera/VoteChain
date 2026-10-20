@@ -266,3 +266,4 @@ function TransactionsPage({ history, state, search, setSearch }) {
   </>;
 }
 
+export default App;
